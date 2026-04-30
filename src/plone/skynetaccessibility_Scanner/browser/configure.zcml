@@ -1,0 +1,50 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="plone.skynetaccessibility_Scanner">
+
+  <!-- Static resources: JS, CSS, images -->
+  <browser:resourceDirectory
+    name="plone.skynetaccessibility_Scanner"
+    directory="static"
+    />
+
+  <!-- Main scanner dashboard -->
+  <browser:page
+      name="skynet-scanner"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".scanner.ScannerDashboardView"
+      template="scanner.pt"
+      permission="cmf.ManagePortal"
+      layer=".interfaces.IPloneSkynetLayer"
+      />
+
+  <!-- User info JSON endpoint -->
+  <browser:page
+      name="skynet-user-info"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".scanner.UserInfoView"
+      permission="zope2.View"
+      layer=".interfaces.IPloneSkynetLayer"
+      />
+
+  <!-- Skynet API proxy — forwards browser requests server-side to bypass CORS -->
+  <browser:page
+      name="skynet-proxy"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".skynet_proxy.SkynetProxyView"
+      permission="zope2.View"
+      layer=".interfaces.IPloneSkynetLayer"
+      />
+
+  <!-- Save settings AJAX endpoint -->
+  <browser:page
+      name="skynet-save-settings"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".scanner.SaveSettingsView"
+      permission="cmf.ManagePortal"
+      layer=".interfaces.IPloneSkynetLayer"
+      />
+
+</configure>

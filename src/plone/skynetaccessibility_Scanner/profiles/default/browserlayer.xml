@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layers>
+  <layer
+      name="plone.skynetaccessibility_Scanner"
+      interface="plone.skynetaccessibility_Scanner.interfaces.IPloneSkynetLayer"
+      />
+</layers>

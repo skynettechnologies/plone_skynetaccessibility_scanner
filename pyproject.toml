@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plone.skynetaccessibility_Scanner"
+version = "1.0.0"
+description = "SkynetAccessibility Scanner for Plone"
+authors = [{name = "Skynet Technologies USA LLC", email = "hello@skynettechnologies.com"}]
+license = {text = "MIT"}
+keywords = ["Python", "Plone", "CMS", "Accessibility", "Scanner"]
+requires-python = ">=3.11"
+dependencies = [
+    "setuptools",
+    "plone.api",
+    "plone.app.registry",
+    "plone.app.dexterity",
+    "requests",
+]
+
+[project.optional-dependencies]
+test = ["plone.app.testing"]
+
+[project.entry-points."z3c.autoinclude.plugin"]
+target = "plone"
+
+[tool.setuptools.packages.find]
+where = ["src"]

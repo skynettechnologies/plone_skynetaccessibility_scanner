@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<registry>
+  <records interface="plone.skynetaccessibility_Scanner.interfaces.ISkynetScannerSettings"
+           prefix="plone.skynetaccessibility_Scanner">
+    <value key="website_domain"></value>
+    <value key="website_id"></value>
+    <value key="dashboard_link"></value>
+    <value key="fav_icon"></value>
+    <value key="plan_state">free</value>
+    <value key="package_name"></value>
+    <value key="package_id_ext"></value>
+    <value key="page_views"></value>
+    <value key="subscr_interval"></value>
+    <value key="end_date"></value>
+    <value key="cancel_date"></value>
+    <value key="paypal_subscr_id"></value>
+    <value key="package_price"></value>
+    <value key="final_price">0.0</value>
+    <value key="is_trial_period">False</value>
+    <value key="is_expired">False</value>
+    <value key="is_cancelled">False</value>
+    <value key="scan_status">0</value>
+    <value key="url_scan_status">0</value>
+    <value key="total_pages">0</value>
+    <value key="total_scan_pages">0</value>
+    <value key="total_selected_pages">0</value>
+    <value key="total_last_scan_pages">0</value>
+    <value key="last_url_scan"></value>
+    <value key="last_scan"></value>
+    <value key="next_scan_date"></value>
+    <value key="success_percentage">0.0</value>
+    <value key="total_violations">0</value>
+    <value key="total_fail">0</value>
+    <value key="total_success">0</value>
+    <value key="plans_json"></value>
+    <value key="active_view">main</value>
+    <value key="error_message"></value>
+  </records>
+</registry>

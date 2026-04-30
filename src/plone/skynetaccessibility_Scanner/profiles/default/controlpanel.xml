@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<object name="portal_controlpanel">
+  <configlet
+      title="SkynetAccessibility Scanner"
+      action_id="skynet-accessibility"
+      appId="skynet-accessibility"
+      category="Products"
+      condition_expr=""
+      url_expr="string:${portal_url}/@@skynet-scanner"
+      icon_expr=""
+      visible="True">
+    <permission>Manage portal</permission>
+  </configlet>
+</object>

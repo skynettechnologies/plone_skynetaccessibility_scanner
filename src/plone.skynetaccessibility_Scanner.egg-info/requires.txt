@@ -1,0 +1,8 @@
+setuptools
+plone.api
+plone.app.registry
+plone.app.dexterity
+requests
+
+[test]
+plone.app.testing

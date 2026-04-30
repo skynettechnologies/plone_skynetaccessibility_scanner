@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: plone.skynetaccessibility_Scanner
+Version: 1.0.0
+Summary: SkynetAccessibility Scanner for Plone
+Author-email: Skynet Technologies USA LLC <hello@skynettechnologies.com>
+License: MIT
+Keywords: Python,Plone,CMS,Accessibility,Scanner
+Requires-Python: >=3.11
+Requires-Dist: setuptools
+Requires-Dist: plone.api
+Requires-Dist: plone.app.registry
+Requires-Dist: plone.app.dexterity
+Requires-Dist: requests
+Provides-Extra: test
+Requires-Dist: plone.app.testing; extra == "test"
