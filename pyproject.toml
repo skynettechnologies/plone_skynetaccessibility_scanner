@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "plone.skynetaccessibility_Scanner"
-version = "1.0.0"
+version = "1.0.1"
 description = "SkynetAccessibility Scanner for Plone"
 authors = [{name = "Skynet Technologies USA LLC", email = "hello@skynettechnologies.com"}]
 license = {text = "MIT"}
